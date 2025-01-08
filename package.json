@@ -5,13 +5,14 @@
   "homepage": "https://kimnerd91.github.io/portfolio",
   "scripts": {
     "serve": "vue-cli-service serve",
-  "build": "vue-cli-service build",
-  "lint": "vue-cli-service lint",
-  "deploy": "gh-pages -d dist"
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "core-js": "^3.8.3",
+    "swiper": "^11.2.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },

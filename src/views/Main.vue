@@ -4,10 +4,15 @@
     <div class="mainWrap col-xl-12 d-flex">
       <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
         <div class="animated-bg" :style="bgStyle" v-if="activeTab === 'portfolio'">
-        <a :href="currentLink">
-        <img :key="currentImg" :src="currentImg" alt="" data-aos="fade-up" class="rotate-3d" />
-        </a>
-          
+          <a :href="currentLink">
+            <img
+              :key="currentImg"
+              :src="currentImg"
+              alt=""
+              data-aos="fade-up"
+              class="rotate-3d"
+            />
+          </a>
         </div>
         <div v-if="activeTab === 'career'" class="d-flex flex-column careerLeft">
           <div class="info">
@@ -19,7 +24,7 @@
             <p class="fw-400">남 / 1991 / 34세</p>
           </div>
           <div class="accordion" id="accordionExample">
-           <div class="accordion-item">
+            <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -40,15 +45,20 @@
                 <div class="accordion-body">
                   <p>
                     안녕하세요, 제 이름은 김동훈이며, 2020년부터 현재까지 약 4년간 웹
-                    퍼블리셔로 활동하고 있습니다. <br> <br>
-                    첫 번째 회사인 BMC Co., Ltd.에서는 주로
-                    WordPress를 사용하여 간단한 코딩 작업, 유지보수, 고객 서비스 업무를
-                    담당했습니다. <br> <br> 현재는 2SBREAKERS에서 전반적인 레이아웃 디자인, 기획,
-                    퍼블리싱을 맡고 있으며,  <br>일부 프론트엔드 작업도 진행하고 있습니다. <br> <br>
-                    그동안 다양한 프로젝트를 독립적으로 진행하며 여러 클라이언트와
-                    협업한 경험이 있습니다.  <br> <br>귀사에 입사하게 된다면, 이전 회사에서의 경험을
-                    바탕으로 더 높은 수준의 기술 개발과 함께 회사와 함께 성장해 나가고
-                    싶습니다. <br> <br> 감사합니다.
+                    퍼블리셔로 활동하고 있습니다. <br />
+                    <br />
+                    첫 번째 회사인 BMC Co., Ltd.에서는 주로 WordPress를 사용하여 간단한
+                    코딩 작업, 유지보수, 고객 서비스 업무를 담당했습니다. <br />
+                    <br />
+                    현재는 2SBREAKERS에서 전반적인 레이아웃 디자인, 기획, 퍼블리싱을 맡고
+                    있으며, <br />일부 프론트엔드 작업도 진행하고 있습니다. <br />
+                    <br />
+                    그동안 다양한 프로젝트를 독립적으로 진행하며 여러 클라이언트와 협업한
+                    경험이 있습니다. <br />
+                    <br />귀사에 입사하게 된다면, 이전 회사에서의 경험을 바탕으로 더 높은
+                    수준의 기술 개발과 함께 회사와 함께 성장해 나가고 싶습니다. <br />
+                    <br />
+                    감사합니다.
                   </p>
                 </div>
               </div>
@@ -87,7 +97,6 @@
                 </div>
               </div>
             </div>
-           
           </div>
         </div>
       </div>
@@ -121,11 +130,19 @@
             <li v-for="(bbb, i) in career" :key="i">
               <div class="careerDiv d-flex align-items-start">
                 <i class="fa-solid fa-circle listDeco"></i>
-                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 d-flex flex-column gap-1">
+                <div
+                  class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 d-flex flex-column gap-1"
+                >
                   <h2 class="fw-700">{{ bbb.title }}</h2>
-                  <h6 class="fw-500"><i class="fa-solid fa-briefcase"></i> {{ bbb.time }}</h6>
-                  <h6 class="fw-500"><i class="fa-solid fa-money-bill"></i>￦ {{ formatPrice(bbb.cash )}}</h6>
-                  <h6 class="fw-500"><i class="fa-solid fa-screwdriver-wrench"></i>{{ bbb.work }}</h6>
+                  <h6 class="fw-500">
+                    <i class="fa-solid fa-briefcase"></i> {{ bbb.time }}
+                  </h6>
+                  <h6 class="fw-500">
+                    <i class="fa-solid fa-money-bill"></i>￦ {{ formatPrice(bbb.cash) }}
+                  </h6>
+                  <h6 class="fw-500">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>{{ bbb.work }}
+                  </h6>
                   <p class="fw-700">주요 프로젝트: {{ bbb.text }}</p>
                 </div>
               </div>
@@ -141,7 +158,9 @@
                   <h2 class="fw-bold">{{ aaa.title }}</h2>
                   <div class="progress-container d-flex gap-0">
                     <h6 class="col-xl-2 fw-700">기여도</h6>
-                    <div class="custom-progress col-xl-10 col-lg-10 col-md-10 col-sm-9 col-9">
+                    <div
+                      class="custom-progress col-xl-10 col-lg-10 col-md-10 col-sm-9 col-9"
+                    >
                       <div
                         class="custom-progress-fill"
                         :style="{
@@ -165,12 +184,59 @@
                     {{ aaa.text }}
                   </h6>
                 </div>
-                <button type="button" class="col-xl-2">
-                  <a :href="aaa.link">VIEW</a>
+                <button
+                  type="button"
+                  class="col-xl-2"
+                  data-bs-toggle="modal"
+                    :data-bs-target="'#modal-' + aaa.id"
+                >
+                  <a>VIEW</a>
                 </button>
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div
+  v-for="(item, index) in PTList"
+  :key="index"
+  class="modal fade"
+  :id="'modal-' + item.id"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content col-xl-6 col-sm-12 col-md-8 col-6">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">{{ item.title }}</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <swiper class="mySwiper">
+            <swiper-slide v-for="(image, imgIndex) in item.modal.img" :key="imgIndex">
+              <div>
+                <img :src="image" alt="Modal Image" class="img-fluid" /></div
+            ></swiper-slide>
+          </swiper>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">
+            <!-- Dynamically bind the link for each item -->
+            <a :href="item.modal.link">Link</a>
+          </button>
         </div>
       </div>
     </div>
@@ -186,13 +252,20 @@ import CIRCULAR from "@/assets/img/E6535B86714D47A68399B49BDB4EFCD4.png";
 import CERTILIFE from "@/assets/img/logo_4x.png";
 import onnury from "@/assets/img/onnuryLOGO0.png";
 import Valmax from "@/assets/img/valmax-removebg-preview.png";
-import gnet from "@/assets/img/gnet.png"
+import gnet from "@/assets/img/gnet.png";
 import AOS from "aos";
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/css";
+
 AOS.init();
 export default {
   name: "Main",
   components: {
     Header,
+    Swiper,
+    SwiperSlide,
   },
   data() {
     return {
@@ -200,16 +273,27 @@ export default {
       hoveredIndex: null,
       PTList: [
         {
+          id: 0,
           title: "2SMall (The Life of Pable)",
           percent: 100,
           text:
             "자체 쇼핑몰 제작, 웹-태블릿-모바일 반응형 홈페이지, vue.js 활용. 개발중단 후 미출시.Figma를 통한 Layout 및 디자인 및 로고제작.",
           icons: ["fab fa-vuejs", "fas fa-laptop", "fas fa-mobile-alt", "fab fa-figma"],
-          link: "/",
+
           img: TLOP,
           bgColor: "#dddddd",
+          modal: {
+            img: [
+              require("../assets/img/modal/tlopImg02.jpg"),
+              require("../assets/img/modal/tlopImg03.jpg"),
+              require("../assets/img/modal/tlopImg04.jpg"),
+              require("../assets/img/modal/tlopImg01.jpg"),
+            ],
+            link: "https://kimnerd91.github.io/ssbmall2025/",
+          },
         },
         {
+          id: 1,
           title: "KB 스타드림 쿠폰이벤트",
           percent: 100,
           text: "KB국민은행 쿠폰이벤트 제작, 크로스브라우징 및 반응형 웹앱.vue.js 활용.",
@@ -217,8 +301,18 @@ export default {
           link: "https://play.google.com/store/apps/details?id=com.kbstar.kbbank&hl=ko",
           img: KB,
           bgColor: "#60584C",
+          modal: {
+            img: [
+              require("../assets/img/modal/kbimg01.png"),
+              require("../assets/img/modal/kbimg02.png"),
+              require("../assets/img/modal/kbimg03.png"),
+              require("../assets/img/modal/kbimg04.png"),
+            ],
+            link: "https://play.google.com/store/apps/details?id=com.kbstar.kbbank&hl=ko",
+          },
         },
         {
+          id: 2,
           title: "온누리가전몰",
           percent: 100,
           text:
@@ -227,26 +321,58 @@ export default {
           link: "http://onnurihomeapp.co.kr",
           img: onnury,
           bgColor: "#FFBF97",
+          modal: {
+            img: [
+              require("../assets/img/modal/onnury01.png"),
+              require("../assets/img/modal/onnury02.png"),
+              require("../assets/img/modal/onnury03.png"),
+              require("../assets/img/modal/onnury04.png"),
+            ],
+            link: "http://onnurihomeapp.co.kr",
+          },
         },
         {
+          id: 3,
           title: "CERTILIFE",
           percent: 75,
           text: "NFT 인증서 서비스, 앱 퍼블리싱 및 어드민 페이지 제작, Vue.js 활용",
           icons: ["fab fa-vuejs", "fas fa-laptop", "fas fa-mobile-alt"],
-          link: "https://apps.apple.com/kr/app/%EC%84%9C%ED%8B%B0%EB%9D%BC%EC%9D%B4%ED%94%84%EB%B3%91%EC%9B%90/id6450404968",
+          link:
+            "https://apps.apple.com/kr/app/%EC%84%9C%ED%8B%B0%EB%9D%BC%EC%9D%B4%ED%94%84%EB%B3%91%EC%9B%90/id6450404968",
           img: CERTILIFE,
           bgColor: "#FFF1AC",
+          modal: {
+            img: [
+              require("../assets/img/modal/certi01.png"),
+              require("../assets/img/modal/certi02.png"),
+              require("../assets/img/modal/certi03.png"),
+              require("../assets/img/modal/cert04.png"),
+            ],
+            link: "https://apps.apple.com/kr/app/%EC%84%9C%ED%8B%B0%EB%9D%BC%EC%9D%B4%ED%94%84%EB%B3%91%EC%9B%90/id6450404968",
+          },
         },
-         {
+        {
+          id: 4,
           title: "G-ON THE ROAD",
           percent: 75,
-          text: "지넷시스템의 블랙박스 판매 사이트, WORDPRESS 활용 및 반응형 웹페이지 구현",
+          text:
+            "지넷시스템의 블랙박스 판매 사이트, WORDPRESS 활용 및 반응형 웹페이지 구현",
           icons: ["fab fa-wordpress", "fas fa-laptop", "fas fa-mobile-alt"],
           link: "https://www.g-on-the-road.com/",
           img: gnet,
           bgColor: "#f9f9f9",
+          modal: {
+            img: [
+              require("../assets/img/modal/gon01.jpg"),
+              require("../assets/img/modal/gon02.jpg"),
+              require("../assets/img/modal/gon03.jpg"),
+              require("../assets/img/modal/gon04.jpg"),
+            ],
+            link: "https://www.g-on-the-road.com/",
+          },
         },
-         {
+        {
+          id: 5,
           title: "VALMAX기술",
           percent: 100,
           text: "발맥스기술 공식홈페이지, WORDPRESS 활용 및 반응형 웹페이지 구현",
@@ -254,6 +380,15 @@ export default {
           link: "/http://www.valmax.co.kr/",
           img: Valmax,
           bgColor: "#EAC6C6",
+          modal: {
+            img: [
+              require("../assets/img/modal/valmax01.jpg"),
+              require("../assets/img/modal/valmax02.jpg"),
+              require("../assets/img/modal/valmax03.jpg"),
+              require("../assets/img/modal/valmax04.jpg"),
+            ],
+            link: "/http://www.valmax.co.kr/",
+          },
         },
       ],
       career: [
@@ -353,10 +488,10 @@ export default {
       return "#0FFF3B"; // Green
     },
     formatPrice(cash) {
-    // Convert the price to a string and add commas
+      // Convert the price to a string and add commas
 
-    return cash.toLocaleString();
-  }
+      return cash.toLocaleString();
+    },
   },
 };
 </script>
