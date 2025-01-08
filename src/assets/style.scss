@@ -1,0 +1,598 @@
+/* 컬러 B&W */
+
+$color01: #000000;
+$color02: #26282C;
+$color03: #484B51;
+$color04: #696E76;
+$color05: #838B94;
+$color06: #AAB0BB;
+$color07: #C6CBD0;
+$color08: #DDE1E4;
+$color09: #EBEEF0;
+$color10: #F7F7F8;
+$color11: #FFFFFF;
+
+/* PointColor */
+
+$mainPoint: #0FFF3B;
+$subPoint: #C0EBA6;
+
+$statusRed: #f23f3f;
+$statusYellow: #ffd338;
+$statusBlue: #287eff;
+
+/* 보더컬러 GrayTone */
+
+$BDC01: #ebeef0;
+$BDC02: #696e76;
+$BDC03: #c6cbd0;
+$BDC04: #484b51;
+$BDC05: #45484d;
+$BDC06: #86888a;
+$BDC07: #65696e;
+$BDC08: #8c8c8e;
+
+/* 폰트페이스 */
+
+@font-face {
+    font-family: 'Balenciaga';
+    src: url("@/assets/font/Balenciaga/Font/Utah Condensed Bold.ttf");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Light';
+    src: url("@/assets/font/SUIT-Light.otf") format('otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url("@/assets/font/SUIT-Regular.otf") format('otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url("@/assets/font/SUIT-Medium.otf") format('otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-SemiBold';
+    src: url("@/assets/font/SUIT-SemiBold.otf") format('otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Bold';
+    src: url("@/assets/font/SUIT-Bold.otf") format('otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+#app {
+    font-family: 'Balenciaga',
+        'Suit-Regular',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $color02;
+    background-color: #F6F6F6;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $color02;
+}
+
+ul {
+    padding-left: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+/* 폰트 웨이트 */
+
+.fw-300 {
+    font-family: "SUIT-Light" !important;
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-family: "SUIT-Regular" !important;
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-family: "SUIT-Medium" !important;
+    font-weight: 500;
+    ;
+}
+
+.fw-700 {
+    font-family: "SUIT-SemiBold" !important;
+    font-weight: 600;
+    ;
+}
+
+.fw-900 {
+    font-family: "SUIT-Bold" !important;
+    font-weight: 700;
+    ;
+}
+
+.fw-bold {
+    font-family: "Balenciaga" !important;
+    font-weight: bold;
+    ;
+}
+
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.poWrap {
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 960px;
+
+    .mainWrap {
+        max-height: 83vh;
+        border-top: 2px solid;
+        border-color: $color01;
+        overflow: hidden;
+
+        .col-xl-5 {
+            border-right: 2px solid;
+            border-color: $color01;
+            max-height: 100%;
+            overflow-y: scroll;
+           
+
+        }
+
+        .col-xl-5::-webkit-scrollbar {
+            width: 2px;
+            /* 스크롤바의 너비 설정 */
+        }
+
+        .col-xl-5::-webkit-scrollbar-track {
+            background:
+                $color05;
+            /* 스크롤바 트랙 배경색 */
+        }
+
+        .col-xl-5::-webkit-scrollbar-thumb {
+            background: $mainPoint;
+            border-radius: 10px;
+        }
+
+        .col-xl-7 {
+            max-height: 100%;
+            overflow-y: scroll;
+        }
+
+        .col-xl-7::-webkit-scrollbar {
+            width: 2px;
+            /* 스크롤바의 너비 설정 */
+        }
+
+        .col-xl-7::-webkit-scrollbar-track {
+            background:
+                $color05;
+            /* 스크롤바 트랙 배경색 */
+        }
+
+        .col-xl-7::-webkit-scrollbar-thumb {
+            background: $mainPoint;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+header {
+    max-width: 1024px;
+    padding-top: 1rem;
+
+    h1 {
+        font-size: 4rem;
+        padding: 1rem 2rem;
+        color: $color01;
+        margin-bottom: 0;
+        border: 2px solid;
+        border-color: $color01;
+        border-left: none;
+        border-right: none;
+    }
+
+    p {
+        padding-left: 2rem;
+
+    }
+}
+
+.mainWrap {
+
+    .col-xl-5 {
+        .careerLeft {
+            padding: 0 0.5rem;
+            .info {
+                text-align: center;
+
+                img {
+                    width: 80%;
+                    margin-bottom: 0.5rem;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .accordion {
+
+                p {
+                    word-break: break-word;
+                    word-wrap: break-word;
+                }
+
+                .iconDiv {
+                    ul {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 0.5rem;
+
+                        li {
+                            img {
+                                width: 100%;
+                                aspect-ratio: 1/1;
+                            }
+                        }
+                    }
+
+                }
+
+                ul.textUl {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-left: 1rem;
+
+                    li {
+                        width: 50%;
+                        list-style: disc;
+
+                        p {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .col-xl-7 {
+
+
+        #career {
+
+
+            ul {
+                li {
+                    border-bottom: 2px solid;
+                    border-color: $color01;
+
+                    .careerDiv {
+                        gap: 1rem;
+                        padding: 2rem 1.5rem;
+
+                        .listDeco {
+                            margin-top: 1rem;
+                        }
+
+                        div {}
+
+                        h2 {
+                            font-size: 2.5rem;
+                            margin-bottom: 1rem;
+                        }
+
+                        h6 {
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            margin-bottom: 1.25rem;
+                            font-size: 1.25rem;
+                            letter-spacing: -1px;
+
+                            i {
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        nav {
+            height: 4rem;
+            padding: 0;
+            display: flex;
+
+            ul {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 2px solid;
+
+                .active {
+                    background-color: $mainPoint;
+
+                }
+
+                li {
+                    width: 50%;
+                    text-align: center;
+                    height: 100%;
+
+
+
+
+
+                    a {
+                        color: $color02;
+                        height: 100%;
+                        margin-bottom: 0;
+                        font-size: 1.5rem;
+                        line-height: 3rem;
+
+                    }
+
+                    &:first-child {
+                        border-right: 1px solid;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    ul.PTUl {
+        li {
+            align-items: flex-start;
+            padding: 1.5rem 1rem;
+            border-bottom: 1px solid;
+            border-color: $color01;
+            cursor: pointer;
+
+            &:first-child {}
+
+            .listDiv {
+                gap: 1rem;
+            }
+
+            .listDeco {
+                margin-top: 0.25rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h5 {
+                font-size: 1rem;
+
+                progress {
+                    border-radius: 0.25rem;
+                }
+            }
+
+            h6 {
+                font-size: 1rem;
+
+                p {
+                    margin-bottom: 0.5rem;
+
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            button {
+                background-color: $color02;
+                padding: 0.2rem 1rem;
+                border: none;
+                transition: all 0.5s;
+                height: 2rem;
+
+                &:hover {
+                    background-color: $mainPoint;
+                    border-color: $mainPoint;
+
+                    a {
+                        color: $color01;
+                    }
+                }
+
+                a {
+                    color: $color11;
+                }
+
+            }
+        }
+    }
+}
+
+.custom-progress {
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-progress-fill {
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    color: $color02;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+    white-space: nowrap;
+}
+
+.animated-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a {
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+    }
+
+}
+
+.animated-bg::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    animation: none;
+    transition: all 0.5s;
+    /* Animation will be dynamically applied */
+}
+
+.rotate-3d {
+    display: inline-block;
+    animation: rotate3D 1s linear;
+    transform-origin: center;
+    perspective: 1000px;
+}
+
+@keyframes rotate3D {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+@keyframes fill-bg {
+    from {
+        transform: scaleY(0)
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .poWrap .mainWrap {
+        max-height: 88vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        text-align: center;
+
+        p {
+            padding-left: 0;
+        }
+    }
+
+   .mainWrap .col-xl-7 #career ul li .careerDiv {
+        gap: 0;
+        padding: 2rem 0.5rem;
+    }
+
+    #portfolio {
+        padding-bottom: 2rem;
+    }
+
+    .mainWrap .col-xl-7 nav {
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 9999;
+            border: 1px solid;
+            border-color: $color01;
+    }
+
+    .poWrap {
+        overflow-y: scroll!important;
+    }
+
+    .mainWrap {
+        flex-direction: column;
+        overflow-y: scroll!important;
+        gap: 2rem;
+    }
+
+    .progress-container {
+        h6 {
+            margin-right: 0.5rem;
+        }
+    }
+}
