@@ -17,7 +17,7 @@
         <div v-if="activeTab === 'career'" class="d-flex flex-column careerLeft">
           <div class="info">
             <img
-              src="https://sajinkwan.com/wp-content/uploads/2018/11/%EA%B0%95%EB%8F%8C%EC%9D%B4_%EC%A6%9D%EB%AA%85.jpg"
+              :src="KDH"
               alt=""
             />
             <h2>김동훈 / Web Publisher</h2>
@@ -255,6 +255,7 @@ import Valmax from "@/assets/img/valmax-removebg-preview.png";
 import gnet from "@/assets/img/gnet.png";
 import AOS from "aos";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import KDH from "@/assets/img/kdh.jpg"
 
 // Import Swiper styles
 import "swiper/css";
@@ -269,6 +270,7 @@ export default {
   },
   data() {
     return {
+      KDH: KDH,
       activeTab: "career",
       hoveredIndex: null,
       PTList: [
@@ -284,10 +286,11 @@ export default {
           bgColor: "#dddddd",
           modal: {
             img: [
-              require("../assets/img/modal/tlopImg02.jpg"),
-              require("../assets/img/modal/tlopImg03.jpg"),
-              require("../assets/img/modal/tlopImg04.jpg"),
-              require("../assets/img/modal/tlopImg01.jpg"),
+              require("../assets/img/modal/tlopimg01.png"),
+              require("../assets/img/modal/tlopimg02.png"),
+              require("../assets/img/modal/tlopimg03.png"),
+              require("../assets/img/modal/tlopimg04.png"),
+              
             ],
             link: "https://kimnerd91.github.io/ssbmall2025/",
           },
@@ -363,10 +366,10 @@ export default {
           bgColor: "#f9f9f9",
           modal: {
             img: [
-              require("../assets/img/modal/gon01.jpg"),
-              require("../assets/img/modal/gon02.jpg"),
-              require("../assets/img/modal/gon03.jpg"),
-              require("../assets/img/modal/gon04.jpg"),
+              require("../assets/img/modal/gonimg01.png"),
+              require("../assets/img/modal/gonimg02.png"),
+              require("../assets/img/modal/gonimg03.png"),
+              require("../assets/img/modal/gonimg04.png"),
             ],
             link: "https://www.g-on-the-road.com/",
           },
@@ -382,10 +385,10 @@ export default {
           bgColor: "#EAC6C6",
           modal: {
             img: [
-              require("../assets/img/modal/valmax01.jpg"),
-              require("../assets/img/modal/valmax02.jpg"),
-              require("../assets/img/modal/valmax03.jpg"),
-              require("../assets/img/modal/valmax04.jpg"),
+              require("../assets/img/modal/valmaximg01.png"),
+              require("../assets/img/modal/valmaximg02.png"),
+              require("../assets/img/modal/valmaximg03.png"),
+              require("../assets/img/modal/valmaximg04.png"),
             ],
             link: "/http://www.valmax.co.kr/",
           },

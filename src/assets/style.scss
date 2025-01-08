@@ -536,9 +536,14 @@ header {
         .modal-content {
             width: auto;
 
-            .img-fluid {
-                aspect-ratio: 1/1;
+            .swiper-slide {
+                div {
+                    overflow-y: scroll;
+                    max-height: 75vh;
+                }
+
             }
+
         }
 
         .modal-content.col-xl-6 {
@@ -550,9 +555,13 @@ header {
         justify-content: center;
 
         .btn-primary {
+            width: 40%;
             a {
                 color: $color11;
             }
+        }
+        .btn-secondary {
+            width: 20%;
         }
     }
 }
@@ -583,9 +592,10 @@ header {
     .poWrap .mainWrap {
         max-height: 88vh;
     }
-     .modal-content.col-xl-6 {
-         width: 75% !important;
-     }
+
+    .modal-content.col-xl-6 {
+        width: 75% !important;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -598,7 +608,7 @@ header {
     }
 
     .modal-content.col-xl-6 {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .mainWrap .col-xl-7 #career ul li .careerDiv {
