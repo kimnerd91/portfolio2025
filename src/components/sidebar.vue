@@ -10,7 +10,7 @@
         <router-link to="/">Home</router-link>
       </li>
       <li>
-        <router-link to="/Introduce">Introduce</router-link>
+        <router-link to="/Introduce">Introducee</router-link>
       </li>
       <li>
         <router-link to="/project">Project</router-link>
