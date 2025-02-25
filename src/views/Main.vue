@@ -1,5 +1,5 @@
 <template>
-  <div class="poWrap d-flex col-xl-12">
+  <div class="poWrap d-flex mx-auto col-xl-12">
   <Sidebar />
     <div class="">  
       <Header />
@@ -34,6 +34,6 @@ export default {
     // Initialize AOS on page load
     AOS.init();
   },
+}
 
-};
-</script>
+
