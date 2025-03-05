@@ -1,13 +1,12 @@
-<<<<<<< HEAD
 import {
   createRouter,
   createWebHistory
 } from "vue-router";
 import Main from "../views/Main.vue";
-import Home from "../views/Home.vue"; 
+import Home from "../views/Home.vue";
 import Project from "../components/Project.vue";
 import Introduce from "../components/Introduce.vue";
-import projectDetail from "../components/ProjectDetail.vue"
+import ProjectDetail from "../components/ProjectDetail.vue"; // 첫 글자 대문자 권장
 
 const routes = [{
   path: "/",
@@ -23,41 +22,25 @@ const routes = [{
       component: Project,
     },
     {
-      path: '/projectDetail/:id',
-      name: 'ProjectDetail',
-      component: () => import('@/components/ProjectDetail.vue'),
+      path: "projectDetail/:id",
+      name: "ProjectDetail",
+      component: ProjectDetail,
       props: true,
       meta: {
-        hideHeader: true
+        hideHeader: true,
       },
     },
     {
-      path: "Introduce",
-      name: "Introduce",
+      path: "introduce",
+      name: "introduce",
       component: Introduce,
     },
   ],
 }, ];
-=======
-import { createRouter, createWebHistory } from "vue-router";
-import Main from "../views/Main.vue";
-
-const routes = [
-  {
-    path: "/",
-    name: "home",
-    component: Main,
-  },
-];
->>>>>>> 9c5399188c42b3f86c18e2b1d3b60b22ba370817
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
-<<<<<<< HEAD
 export default router;
-=======
-export default router;
->>>>>>> 9c5399188c42b3f86c18e2b1d3b60b22ba370817

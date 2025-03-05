@@ -4,25 +4,16 @@
   "private": true,
   "homepage": "https://kimnerd91.github.io/portfolio",
   "scripts": {
-<<<<<<< HEAD
-  "serve": "vue-cli-service serve",
-  "build": "vue-cli-service build",
-  "lint": "vue-cli-service lint",
-   "deploy": "gh-pages -d dist"
-=======
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy": "gh-pages -d dist"
->>>>>>> 9c5399188c42b3f86c18e2b1d3b60b22ba370817
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "colorette": "^2.0.20",
     "core-js": "^3.8.3",
-<<<<<<< HEAD
-=======
     "swiper": "^11.2.0",
->>>>>>> 9c5399188c42b3f86c18e2b1d3b60b22ba370817
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
@@ -37,10 +28,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
-<<<<<<< HEAD
-=======
     "gh-pages": "^6.3.0",
->>>>>>> 9c5399188c42b3f86c18e2b1d3b60b22ba370817
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0"
