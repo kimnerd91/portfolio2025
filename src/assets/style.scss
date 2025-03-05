@@ -216,7 +216,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    min-height: 88vh;
     h1 {
         font-size: 10rem;
     }
@@ -263,19 +263,19 @@ ul {
 }
 
 .project {
-    height: 89vh;
+    height: 88vh;
 
     .projectUl {
         overflow-x: scroll;
         height: 100%;
 
         li {
-            padding: 1rem 2rem;
+            padding: 5rem 2rem;
             border-right: 1px solid;
             border-color: $BDC03;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+           
 
             .imgDiv {
                 margin-bottom: 2rem;
@@ -307,6 +307,152 @@ ul {
 
 
         }
+    }
+}
+
+.introduce {
+    min-height: 88vh;
+
+    .left {
+        padding: 3rem 3rem;
+        border-right: 2px solid;
+        border-color: $BDC03;
+
+        img {
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-family: 1.25rem;
+            line-height: 1.2rem;
+        }
+    }
+
+    .right {
+        .block {
+            margin-bottom: 2rem;
+
+            h4 {
+                margin-bottom: 1.5rem;
+            }
+            ul {
+                li {
+                    
+                }
+            }
+
+           
+        }
+         .skils {
+             ul {
+                 width: 100%;
+             }
+         }
+    }
+
+    .col-6 {
+        padding: 5rem 0;
+        margin-left: 5rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .progress-bar-wrap {
+        position: relative;
+        height: 10px;
+        /* 막대 높이 */
+        background-color: #e9ecef;
+        /* 배경색 */
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .progress-bar {
+        display: block;
+        height: 100%;
+        background-color: $color03;
+        /* 채워지는 색 */
+        transition: width 0.5s ease;
+        /* 애니메이션 효과 */
+    }
+}
+
+.pjd {
+    .detailImg {
+        img {
+            width: 100%;
+        }
+    }
+    .detailText {
+        
+        position: fixed;
+        top: 0;
+        right: 1rem;
+        padding: 0 3rem;
+
+        h1 {
+            padding: 7rem 0 3rem 0;
+            font-size: 2.5rem;
+        }
+
+        div {
+            border-top: 1px solid;
+            border-color: $BDC06;
+            padding: 2.5rem 0;
+
+            h6 {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+                color: $color05;
+            }
+
+            ul {
+                width: 80%;
+                li {
+                    margin-bottom: 0.5rem;
+                    overflow: hidden;
+                    span {
+                        color: $statusBlue;
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                        color: $color04;
+                    }
+                }
+            }
+        }
+        button {
+            border-radius: 0.5rem;
+            border-color: transparent;
+            background-color: $statusBlue;
+            padding: 0.5rem 2rem;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: $color11;
+                border-color: $statusBlue;
+
+                a {
+                    color: $statusBlue;
+                }
+            }
+            a {
+                color: $color11;
+            }
+        }
+       
     }
 }
 
@@ -554,72 +700,6 @@ header {
     }
 }
 
-.custom-progress {
-    background-color: #e0e0e0;
-    height: 20px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-.custom-progress-fill {
-    height: 100%;
-    line-height: 20px;
-    text-align: center;
-    color: $color02;
-    font-size: 0.8rem;
-    font-weight: bold;
-    border-radius: 10px 0 0 10px;
-    white-space: nowrap;
-}
-
-.animated-bg {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    a {
-        padding: 5rem 0;
-        text-align: center;
-    }
-
-    img {
-        width: 80%;
-    }
-
-}
-
-.animated-bg::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: inherit;
-    transform: scaleY(0);
-    transform-origin: bottom;
-    animation: none;
-    transition: all 0.5s;
-    /* Animation will be dynamically applied */
-}
-
-.rotate-3d {
-    display: inline-block;
-    animation: rotate3D 1s linear;
-    transform-origin: center;
-    perspective: 1000px;
-}
 
 @keyframes rotate3D {
     0% {

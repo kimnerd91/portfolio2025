@@ -1,8 +1,8 @@
 <template>
-  <div class="poWrap d-flex mx-auto col-xl-12">
+  <div class="poWrap d-flex col-xl-12">
   <Sidebar />
-    <div class="">  
-      <Header />
+    <div class="col-12" style="overflow-y: scroll">  
+      <Header v-if="!$route.meta.hideHeader" />
       <div>
         <router-view></router-view>
       </div>

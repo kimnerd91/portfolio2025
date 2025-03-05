@@ -3,30 +3,40 @@ import {
   createWebHistory
 } from "vue-router";
 import Main from "../views/Main.vue";
-import Home from "../views/Home.vue"; // 기본 홈 화면
+import Home from "../views/Home.vue"; 
 import Project from "../components/Project.vue";
 import Introduce from "../components/Introduce.vue";
+import projectDetail from "../components/ProjectDetail.vue"
 
 const routes = [{
   path: "/",
   component: Main,
   children: [{
-      path: "", // 기본 홈 페이지
+      path: "",
       name: "home",
       component: Home,
     },
     {
-      path: "project", // "/project" 경로에서만 보이게 함
+      path: "project",
       name: "project",
       component: Project,
     },
     {
-      path: "Introduce", // "/Introduce" 경로에서만 보이게 함
+      path: '/projectDetail/:id',
+      name: 'ProjectDetail',
+      component: () => import('@/components/ProjectDetail.vue'),
+      props: true,
+      meta: {
+        hideHeader: true
+      },
+    },
+    {
+      path: "Introduce",
       name: "Introduce",
       component: Introduce,
     },
   ],
-},];
+}, ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
