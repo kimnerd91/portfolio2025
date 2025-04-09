@@ -25,7 +25,8 @@ export const Project = [{
         detailImg: TLOPDetail,
         company: "TLOP & 상상브레이커즈",
         date: "2024.12",
-        link: "https://kimnerd91.github.io/ssbmall2025/"
+        link: "https://kimnerd91.github.io/ssbmall2025/",
+        git: "https://github.com/kimnerd91/ssbmall2025"
     },
     {
         id: 1,
@@ -36,7 +37,8 @@ export const Project = [{
         detailImg: KBDetail,
         company: "KB국민은행",
         date: "2024.10 ~ 2024.12",
-        link: "https://play.google.com/store/apps/details?id=com.kbstar.kbbank&hl=ko"
+        link: "https://play.google.com/store/apps/details?id=com.kbstar.kbbank&hl=ko",
+        git: "#"
     },
     {
         id: 2,
@@ -47,7 +49,8 @@ export const Project = [{
         detailImg: CLDetail,
         company: "CircularLaps",
         date: "2024.08 ~ 2024.10",
-        link: "#"
+        link: "#",
+            git: "#"
     },
     {
         id: 3,
@@ -58,7 +61,8 @@ export const Project = [{
         detailImg: MucaDetail,
         company: "상상브레이커즈",
         date: "2023.12 ~ 2024.02",
-        link: "https://github.com/kimnerd91/muca"
+        link: "https://github.com/kimnerd91/muca",
+            git: "https://github.com/kimnerd91/muca"
     },
     {
         id: 5,
@@ -69,7 +73,8 @@ export const Project = [{
         detailImg: OnnuryDetail,
         company: "상상브레이커즈",
         date: "2023.10 ~ 2023.12",
-        link: "https://github.com/kimnerd91/onnury"
+        link: "https://github.com/kimnerd91/onnury",
+            git: "https://github.com/kimnerd91/onnury"
     },
     // {
     //     id: 6,
@@ -91,7 +96,8 @@ export const Project = [{
         detailImg: GnetDetail,
         company: "주식회사 BMC",
         date: "2021.05 ~ 2021.09",
-        link: "https://www.g-on-the-road.com/"
+        link: "https://www.g-on-the-road.com/",
+            git: "#"
     },
     {
         id: 7,
@@ -102,7 +108,8 @@ export const Project = [{
         detailImg: ValmaxDetail,
         company: "주식회사 BMC",
         date: "2020.11 ~ 2021.04",
-        link: "http://www.valmax.co.kr/home/"
+        link: "http://www.valmax.co.kr/home/",
+            git: "#"
     },
     {
         id: 8,
@@ -113,7 +120,8 @@ export const Project = [{
         detailImg: "",
         company: "",
         date: "",
-        link: "#"
+        link: "#",
+            git: "#"
     },
 
 ]

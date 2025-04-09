@@ -49,6 +49,9 @@
         <button type="button">
           <a :href="projectData.link">바로가기</a>
         </button>
+        <button type="button">
+          <a :href="projectData.git">Git</a>
+        </button>
       </div>
     </div>
   </div>
