@@ -38,7 +38,7 @@ export const Project = [{
         company: "KB국민은행",
         date: "2024.10 ~ 2024.12",
         link: "https://play.google.com/store/apps/details?id=com.kbstar.kbbank&hl=ko",
-        git: "#"
+        git: "https://github.com/kimnerd91/portfolio2025"
     },
     {
         id: 2,
@@ -50,7 +50,7 @@ export const Project = [{
         company: "CircularLaps",
         date: "2024.08 ~ 2024.10",
         link: "#",
-            git: "#"
+            git: "https://github.com/kimnerd91/portfolio2025"
     },
     {
         id: 3,
@@ -97,7 +97,7 @@ export const Project = [{
         company: "주식회사 BMC",
         date: "2021.05 ~ 2021.09",
         link: "https://www.g-on-the-road.com/",
-            git: "#"
+            git: "https://github.com/kimnerd91/portfolio2025"
     },
     {
         id: 7,
@@ -109,7 +109,7 @@ export const Project = [{
         company: "주식회사 BMC",
         date: "2020.11 ~ 2021.04",
         link: "http://www.valmax.co.kr/home/",
-            git: "#"
+            git: "https://github.com/kimnerd91/portfolio2025"
     },
     {
         id: 8,

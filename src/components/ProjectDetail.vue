@@ -49,7 +49,7 @@
         <button type="button">
           <a :href="projectData.link">바로가기</a>
         </button>
-        <button type="button">
+        <button type="button" style="margin-left: 1rem">
           <a :href="projectData.git">Git</a>
         </button>
       </div>
